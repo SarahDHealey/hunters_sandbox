@@ -19,7 +19,7 @@ class Product < ActiveRecord::Base
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
   scope :unclaimed, -> { where(order_id: nil).order("created_at DESC")}
-
+  scope :active, -> {where(active: true)}
 
   def hosted_by?(current_user)
     user_id == current_user.id

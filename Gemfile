@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby "2.2.3"
+ruby "2.2.2"
 
 #use Postgres
 gem 'pg'
 
 gem 'devise'
 
-gem 'puma'
+# gem 'puma'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -75,4 +75,3 @@ end
 source 'http://dresssed.com/gems/a32d5c5588e50352351a/' do
   gem 'dresssed-gimlet'
 end
-
